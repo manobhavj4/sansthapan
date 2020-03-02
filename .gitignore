@@ -1,7 +1,3 @@
-#Not Ready for Production
-*.py[cod]
-
-
 sanstha/settings/local.py
 
 
