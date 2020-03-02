@@ -15,7 +15,6 @@
       body {
         background-image: url("{% static 'images/homeimages/PHOTO3.jpg' %}");
         background-repeat: no-repeat;
-        /*background-color: yellow;*/
       }
       footer {
            position:fixed;
@@ -31,8 +30,6 @@
 {% block title %}<title>Base page</title>{% endblock %}
     
  	{% include 'basenavbar/css.html' %}
-<!--   <link rel="stylesheet" type="text/css" href='{% static "css/myfile.css" %}'> -->
- 	<!-- {% block base_head %}{% endblock %} -->
   </head>
   <body>
   	{% include 'basenavbar/nav.html' with brand_name='Sansthapan.co.in' %}

@@ -30,15 +30,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',HomeView,name='home'),
     url(r'^about/$', AboutView,name='about'),
-    # url(r'^about/$', AboutView,name='about'),
-    
+ 
     url(r'^contact/$', ContactView,name='contact'),
     url(r'^notification-update/$', NotificationView.as_view(),name='notification-update'),
     url(r'^gallery/$', GalleryView.as_view(),name='gallery'),
-
-    #url(r'^bootstrap/$', TemplateView.as_view(template_name='bootstrap/nipan.html')),
-
-    #url(r'^cart/', include(("cart.urls", 'cart'), namespace='cart')),
    
 ]
 
