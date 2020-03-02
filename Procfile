@@ -1,1 +1,1 @@
-web: gunicorn sanstha.wsgi
+web: gunicorn dj-project.wsgi
