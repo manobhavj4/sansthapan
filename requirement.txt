@@ -11,7 +11,6 @@ idna==2.9
 importlib-metadata==1.5.0
 olefile==0.46
 Pillow==7.0.0
-pkg-resources==0.0.0
 psycopg2-binary==2.8.4
 pypi==2.1
 pytz==2019.3
