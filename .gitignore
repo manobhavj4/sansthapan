@@ -1,5 +1,5 @@
 #Not Ready for Production
-santha/
+*.py[cod]
 
 
 sanstha/settings/local.py
