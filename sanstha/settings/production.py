@@ -76,11 +76,6 @@ TEMPLATES = [
     },
 ]
 
-import dj_database_url
-db_from_env = dj_database_url.config() #postgresql in heroku
-DATABASES['default'].update(db_from_env)
-DATABASES['default']['CONN_MAX_AGE'] = 500
-
 WSGI_APPLICATION = 'sanstha.wsgi.application'
 
 
@@ -93,6 +88,12 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+import dj_database_url
+db_from_env = dj_database_url.config() #postgresql in heroku
+DATABASES['default'].update(db_from_env)
+DATABASES['default']['CONN_MAX_AGE'] = 500
 
 
 # Password validation
