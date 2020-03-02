@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+<title>Gallery</title>
+{% endblock %}
+<!-- {% block base_head %}
+<link rel="stylesheet" type="text/css" href='{% static "css/main.css" %}'>
+{% endblock %}
+ -->
+
+{% block content %}
+		<h1 class="mb-5">Photo Gallery</h1>
+	  	
+	  	<div class="container">
+      	<div class="row">
+	  	{% for obj in object_list %}
+	        <div class="col-6">
+	        	{% if obj.image %}
+					  <a><img src="{{obj.image.url}}" class="card-img-top" alt="{{ instance.title }} logo"></a>
+				{% else %}
+				  <p>not available</p>
+				{% endif %}
+				<br>
+	        	{% if obj.title %}
+				  <p>{{obj.title}}</p>
+				{% else %}
+				  <p>not available</p> 
+				{% endif %}
+			</div>
+	    {% endfor %}
+		</div>
+		</div>
+{% endblock %}

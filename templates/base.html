@@ -1,0 +1,47 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{% static 'images/logo.png' %}" sizes="16x16 32x32">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <style type="text/css">
+     p {
+      text-align: justify;
+     }
+      body {
+        background-image: url("{% static 'images/homeimages/PHOTO3.jpg' %}");
+        background-repeat: no-repeat;
+        /*background-color: yellow;*/
+      }
+      footer {
+           position:fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #292b2c;
+           color: white;
+           text-align: center;
+        }
+
+   </style>
+{% block title %}<title>Base page</title>{% endblock %}
+    
+ 	{% include 'basenavbar/css.html' %}
+<!--   <link rel="stylesheet" type="text/css" href='{% static "css/myfile.css" %}'> -->
+ 	<!-- {% block base_head %}{% endblock %} -->
+  </head>
+  <body>
+  	{% include 'basenavbar/nav.html' with brand_name='Sansthapan.co.in' %}
+  	<div class="container">
+      {% block content %}{% endblock %}
+    </div><br><br>
+    
+    {% include 'footer/footer.html' %}
+
+    {% include 'basenavbar/js.html' %}
+  </body>
+</html>
