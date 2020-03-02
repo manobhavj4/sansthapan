@@ -76,6 +76,11 @@ TEMPLATES = [
     },
 ]
 
+import dj_database_url
+db_from_env = dj_database_url.config() #postgresql in heroku
+DATABASES['default'].update(db_from_env)
+DATABASES['default']['CONN_MAX_AGE'] = 500
+
 WSGI_APPLICATION = 'sanstha.wsgi.application'
 
 
