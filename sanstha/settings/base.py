@@ -156,3 +156,13 @@ CSRF_COOKIE_SECURE              = False
 SECURE_HSTS_SECONDS             = None
 SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
 SECURE_FRAME_DENY               = False
+
+
+
+
+AWS_GROUP_NAME = "Sansthapan_Group"
+AWS_USERNAME = "sansthapan-user"
+AWS_ACCESS_KEY_ID = "AKIA54VLXOOL7HNMIXU6"
+AWS_SECRET_KEY = "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"
+
+
