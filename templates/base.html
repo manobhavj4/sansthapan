@@ -9,12 +9,26 @@
     <link rel="icon" href="{% static 'images/logo.png' %}" sizes="16x16 32x32">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <style type="text/css">
+
+    h1{
+      background-color: blue;
+      color: white;
+    }
+    h2{
+      
+      color: white;
+    }
+
      p {
       text-align: justify;
+      background-color: green;
+      color: white;
      }
       body {
         background-image: url("{% static 'images/homeimages/PHOTO3.jpg' %}");
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
       footer {
            position:fixed;
@@ -32,7 +46,7 @@
  	{% include 'basenavbar/css.html' %}
   </head>
   <body>
-  	{% include 'basenavbar/nav.html' with brand_name='Sansthapan.co.in' %}
+  	{% include 'basenavbar/nav.html' with brand_name='sansthapan.co.in' %}
   	<div class="container">
       {% block content %}{% endblock %}
     </div><br><br>

@@ -145,6 +145,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn","static_root")
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn","media_root")
 
+from sanstha.aws.conf import *
+
 
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_HOST_USER='contactsansthapan@gmail.com'
