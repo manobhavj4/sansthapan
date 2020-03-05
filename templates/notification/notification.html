@@ -41,7 +41,7 @@
       	<div class="row">
 	  	{% for obj in object_list %}
 	      <tr>
-	      	<div class="col-1">
+	      	<div style="colot:white;" class="col-1">
 	        <td scope="col">{{ forloop.counter }}</td>
 	        </div>
 	        <div class="col-1">
@@ -63,7 +63,7 @@
 				{% endif %}
 	        </td>
 			</div>
-	        <div class="col-1">
+	        <div style="colot:white;" class="col-1">
 	        <td scope="col">
 	        	{% if obj.document %}
 					  <a href="{{obj.document.url}}">{{obj.document }}</a>
